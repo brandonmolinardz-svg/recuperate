@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(180deg, #eaf6f6, #fdfefe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 22px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.mensaje {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
