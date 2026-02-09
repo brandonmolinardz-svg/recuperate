@@ -8,7 +8,7 @@ function drawHeart(s) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   ctx.save();
-  ctx.translate(140, 140);
+  ctx.translate(canvas.width / 2, canvas.height / 2);
   ctx.scale(s, s);
 
   ctx.beginPath();
@@ -22,7 +22,7 @@ function drawHeart(s) {
 }
 
 function animate() {
-  scale += direction * 0.005;
+  scale += direction * 0.002;   // velocidad del “latido”
 
   if (scale > 1.08) direction = -1;
   if (scale < 0.95) direction = 1;
@@ -32,3 +32,4 @@ function animate() {
 }
 
 animate();
+
