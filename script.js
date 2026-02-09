@@ -22,7 +22,7 @@ function drawHeart(s) {
 }
 
 function animate() {
-  scale += direction * 0.002;
+  scale += direction * 0.005;
 
   if (scale > 1.08) direction = -1;
   if (scale < 0.95) direction = 1;
